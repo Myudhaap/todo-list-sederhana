@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>Todo List</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- js link -->
+    <script type="module" src="assets/js/script.js"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-logo">
+          <h-1 class="logo">Todo List</h-1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <article class="todo">
+          <h2 class="todo-title">Tambah yang harus dilakukan</h2>
+          <form id="form" class="todo-form">
+            <fieldset>
+              <label for="todo">
+                Masukkan hal yang akan dilakukan
+                <input
+                  type="text"
+                  name="todo"
+                  id="todo"
+                  placeholder="Todo..."
+                />
+              </label>
+              <label for="timestamp">
+                Masukkan tanggal harus selesai
+                <input type="date" name="timestamp" id="timestamp" />
+              </label>
+            </fieldset>
+            <fieldset>
+              <button type="submit" id="submit">Submit</button>
+            </fieldset>
+          </form>
+        </article>
+        <article class="result">
+          <article class="result-completed" id="result-not">
+            <h2 class="result-header">Yang harus dilakukan</h2>
+            <div class="result-list" id="todos"></div>
+          </article>
+        </article>
+        <article class="result">
+          <article class="result-completed" id="result-completed">
+            <h2 class="result-header">Yang harus dilakukan</h2>
+            <div class="result-list" id="todos"></div>
+          </article>
+        </article>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
